@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edu Portal</title>
-</head>
-<body>
-    
-</body>
-</html>
+// ================= Navbar style on scroll =======================
+window.addEventListener("scroll",function(){
+    let nav = document.querySelector("nav");
+    nav.classList.toggle("window-scroll",window.scrollY>50);
+});
