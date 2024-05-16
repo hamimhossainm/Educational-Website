@@ -288,4 +288,48 @@ header{
     background: var(--color-bg1);
     text-align: center;
     border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.courses__info{
+    padding: 2rem;
+}
+
+.courses__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+
+
+/* Special Note */
+.faqs{
+    background: var(--color-bg2);
+}
+
+.faqs__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.faq{
+    background: var(--color-primary);
+    display: grid;
+    grid-template-columns: 5% 95%;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+.faq__icon i{
+    font-size: .9rem;
+}
+
+.que__ans h4{
+    font-size: .9rem;
 }
