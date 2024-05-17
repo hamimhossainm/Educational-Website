@@ -147,7 +147,7 @@ nav button{
 }
 
 .nav__menu li a:hover{
-    color: var(--color-bg2);
+    color: var(--color-warning);
 }
 
 
@@ -307,29 +307,42 @@ header{
 
 
 
-/* Special Note */
 .faqs{
-    background: var(--color-bg2);
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
 }
 
 .faqs__container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .faq{
-    background: var(--color-primary);
-    display: grid;
-    grid-template-columns: 5% 95%;
-    cursor: pointer;
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
 }
 
-.faq__icon i{
-    font-size: .9rem;
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2rem;
 }
 
-.que__ans h4{
-    font-size: .9rem;
+.faq__icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq .open p{
+    display: block;
 }
