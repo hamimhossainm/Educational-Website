@@ -6,6 +6,9 @@ window.addEventListener("scroll",function(){
 
 
 
+// ================= FAQ =======================
+
+
 let article = document.querySelectorAll(".faq");
 let len= article.length;
 
@@ -31,6 +34,25 @@ for(let n=0;n<len;n++){
         }
     });
 }
+
+
+
+// ================= Swipper JS =======================
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints:{
+        600:{
+            slidesPerView: 2,
+        }
+    }
+  });
 
 
 
