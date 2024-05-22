@@ -4,10 +4,34 @@ window.addEventListener("scroll",function(){
     nav.classList.toggle("window-scroll",window.scrollY>50);
 });
 
-let faqs= document.querySelectorAll(".faq");
 
-faqs.forEach(faq=>{
-    faq.addEventListener("click",()=>{
-        faq.classList.toggle("open");
+
+let article = document.querySelectorAll(".faq");
+let len= article.length;
+
+let icon = document.querySelectorAll(".faq__icon i");
+let paras =document.querySelectorAll(".que__ans p");
+
+for(let m=0;m<len; m++){
+    article[m].addEventListener("click",()=>{
+        if(icon[m].className==="ri-add-line"){
+            icon[m].className="ri-subtract-fill";
+        }else{
+            icon[m].className ="ri-add-line";
+        }
     });
-})
+}
+
+for(let n=0;n<len;n++){
+    article[n].addEventListener("click",()=>{
+        if(paras[n].className==="para"){
+            paras[n].className="open";
+        }else{
+            paras[n].className="para";
+        }
+    });
+}
+
+
+
+

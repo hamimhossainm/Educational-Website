@@ -330,7 +330,7 @@ header{
 
 .faq h4{
     font-size: 1rem;
-    line-height: 2.2rem;
+    line-height: 2.2;
 }
 
 .faq__icon{
@@ -338,11 +338,13 @@ header{
     font-size: 1.2rem;
 }
 
-.faq p{
+
+.para{
     margin-top: 0.8rem;
     display: none;
+    transition: var(--transition);
 }
 
-.faq .open p{
+.open {
     display: block;
 }
